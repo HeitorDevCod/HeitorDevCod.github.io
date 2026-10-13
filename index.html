@@ -175,8 +175,6 @@
       padding-top: 0.4rem;
     }
     .linha .tags { margin: 0; }
-    .tags .estudo { border-style: dashed; color: var(--ink-soft); }
-    .legenda { font-size: 0.85rem; color: var(--ink-soft); margin: 1.25rem 0 0; }
     @media (max-width: 600px) {
       .linha { grid-template-columns: 1fr; gap: 0.5rem; }
     }
@@ -251,26 +249,25 @@
         <div class="linhas">
           <div class="linha">
             <span class="categoria">Linguagens</span>
-            <div class="tags"><span>Python</span><span class="estudo">JavaScript</span><span class="estudo">TypeScript</span></div>
+            <div class="tags"><span>Python</span><span>JavaScript</span><span>TypeScript</span></div>
           </div>
           <div class="linha">
             <span class="categoria">Back-end</span>
-            <div class="tags"><span>FastAPI</span><span>Pydantic</span><span class="estudo">Django</span></div>
+            <div class="tags"><span>FastAPI</span><span>Pydantic</span><span>Django</span><span>Django REST Framework</span></div>
           </div>
           <div class="linha">
             <span class="categoria">Front-end</span>
-            <div class="tags"><span class="estudo">React</span><span class="estudo">React Native</span><span class="estudo">Angular</span></div>
+            <div class="tags"><span>React</span><span>React Native</span><span>Angular</span></div>
           </div>
           <div class="linha">
             <span class="categoria">Dados</span>
-            <div class="tags"><span>SQLite</span><span class="estudo">SQL</span></div>
+            <div class="tags"><span>SQLite</span><span>PostgreSQL</span><span>SQL</span></div>
           </div>
           <div class="linha">
             <span class="categoria">Ferramentas</span>
-            <div class="tags"><span>pytest</span><span>Git e GitHub</span><span>VS Code</span></div>
+            <div class="tags"><span>pytest</span><span>Git e GitHub</span><span>GitHub Actions</span><span>Docker</span><span>Docker Compose</span><span>VS Code</span></div>
           </div>
         </div>
-        <p class="legenda">Tecnologias com borda tracejada são as que estou estudando.</p>
       </div>
     </section>
 
@@ -302,6 +299,12 @@
             <p>API de pagamentos com processamento assíncrono: fila no RabbitMQ, worker com novas tentativas, idempotência com Idempotency-Key e PostgreSQL, tudo subido com Docker Compose.</p>
             <div class="stack">Python · FastAPI · RabbitMQ · PostgreSQL · Docker</div>
             <a href="https://github.com/HeitorDevCod/pagamentos-microservicos">Ver no GitHub →</a>
+          </article>
+          <article class="projeto">
+            <h3>Sistema de Estoque</h3>
+            <p>Gestão de estoque para pequenos negócios, com cadastro de produtos, categorias e fornecedores. Entradas e saídas são registradas como movimentações imutáveis, com trava no banco para impedir saídas sem saldo e alerta de estoque baixo.</p>
+            <div class="stack">Python · Django · Django REST Framework · PostgreSQL · Docker</div>
+            <a href="https://github.com/HeitorDevCod/estoque-django">Ver no GitHub →</a>
           </article>
         </div>
       </div>
