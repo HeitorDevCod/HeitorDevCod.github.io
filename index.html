@@ -179,7 +179,8 @@
       .linha { grid-template-columns: 1fr; gap: 0.5rem; }
     }
 
-    .projetos { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .projetos { display: grid; gap: 1.25rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    @media (max-width: 700px) { .projetos { grid-template-columns: 1fr; } }
     .projeto { border: 1px solid var(--line); padding: 1.6rem; background: var(--bg); }
     .projeto h3 {
       font-family: var(--serif);
@@ -285,18 +286,6 @@
             <p>API REST para criar, listar, buscar, atualizar e remover tarefas, com validação de dados e erros 404.</p>
             <div class="stack">Python · FastAPI · SQLite · Pydantic</div>
             <a href="https://github.com/HeitorDevCod/api-tarefas-fastapi">Ver no GitHub →</a>
-          </article>
-          <article class="projeto">
-            <h3>Gerenciador de tarefas</h3>
-            <p>Programa de terminal para adicionar, listar, concluir e remover tarefas, com as tarefas salvas em arquivo JSON.</p>
-            <div class="stack">Python · JSON · Funções</div>
-            <a href="https://github.com/HeitorDevCod/gerenciador-de-tarefas">Ver no GitHub →</a>
-          </article>
-          <article class="projeto">
-            <h3>Calculadora de IMC</h3>
-            <p>Calcula o IMC a partir do peso e da altura, com a classificação da OMS e testes automatizados.</p>
-            <div class="stack">Python · pytest</div>
-            <a href="https://github.com/HeitorDevCod/calculadora-imc">Ver no GitHub →</a>
           </article>
           <article class="projeto">
             <h3>Pagamentos Microserviços</h3>
